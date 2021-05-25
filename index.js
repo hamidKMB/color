@@ -22,12 +22,12 @@ const highLightMenu = () => {
      //adds "highlight" class to my menu items
      if (window.innerWidth > 960 && scrollPosition < 600) {
           homeMenu.classList.add('highlight');
-          aboutMenu.classList.remove("highlight");
+          aboutMenu.classList.remove('highlight');
           return 
-     } else if (window.innerWidth > 960 && scrollPosition < 1400) {
+     } else if (window.innerWidth > 960 && scrollPosition >600 && scrollPosition < 1400) {
+          homeMenu.classList.remove("highlight");
           aboutMenu.classList.add("highlight");
-          aboutMenu.classList.remove("highlight");
-          servicesMenu.classList.remove("highlight")
+          servicesMenu.classList.remove("highlight");
           return
      } else if (window.innerWidth > 960 && scrollPosition < 2345) {
           servicesMenu.classList.add("highlight")
